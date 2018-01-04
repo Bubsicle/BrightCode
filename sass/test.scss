@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+// Variables
+$blumine: #21618C;
+$pickled-bluewood: #273746;
+$astronaut: #234B71;
+$shuttle-gray: #566573;
+$bright-gray: #353D45;
+$porcelain: #ECF0F1;
+$mountain-meadow: #16A085;
+$nunito: 'Nunito', sans-serif;
+$textareasize: 25px;
+$eucalyptus: #239B56;
+$deep-sea-green: #0B5345;
+$cadet-blue: #AEB6BF;
+$nandor: #515A5A;
+$fruit-salad: #4CAF50;
+
+// body/navbar
+
+body {
+  background-color: $pickled-bluewood;
+
+}
+
+.navbar {
+  background-color: $astronaut;
+  width: 100%;
+  overflow:hidden;
+}
+
+h3 {
+  margin-top: 4px;
+}
+
+// HTML SECTION
+
+.html {
+  background-color: $blumine;
+  padding-right: 0;
+}
+
+.tool-title {
+  color: white;
+}
+
+// Textareas
+
+.switch {
+  background-color: $bright-gray;
+}
+
+.nav-pills .nav-link.active{
+  background-color: $porcelain;
+  border-radius: 0;
+  color: $pickled-bluewood;
+}
+
+.switch a {
+    color: white;
+}
+
+.editor {
+  background-color: $shuttle-gray;
+  border: 2px solid $porcelain;
+  border-radius: 7px;
+  padding: 0;
+  overflow: scroll;
+}
+
+textarea {
+  border:none;
+  resize: none;
+  font-family: $nunito;
+  font-size: $textareasize;
+  background-color: $porcelain;
+  transition: .5s;
+  padding: 0;
+}
+
+textarea#html:focus, textarea#css:focus {
+  transition: .5s;
+  background-color: $mountain-meadow;
+  color: white;
+  outline-width: 0;
+}
+
+.area-top, .area-bottom {
+  background-color: $shuttle-gray;
+  color: $porcelain;
+  overflow: hidden;
+}
+
+// Textareas END
+
+// INSTRCTIONS
+
+// hr STYLES
+hr {
+  border: 0;
+  height: 5px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+// hr STYLES END
+
+.instruc {
+  color: white;
+  overflow: scroll;
+  height:600px;
+}
+
+.snippet {
+  background-color: $eucalyptus;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 6px;
+  padding-bottom: 0;
+  font-family: $nunito;
+  transition: .6s;
+}
+
+.snippet > p {
+  margin: 4px;
+  margin-top: 2px;
+}
+
+.snippet:hover {
+  transition: .5s;
+  background-color: $deep-sea-green;
+}
+
+// INSTRUCTIONS END
+
+// HTML SECTION END
+
+
+
+// OUTPUT SECTION
+
+iframe {
+  border: none;
+  width: 100%;
+  background-color: white;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.output {
+  background-color: $blumine;
+}
+
+// social
+  .social {
+    color: white;
+    margin-top: 300px;
+    font-size: 1.4em;
+  }
+
+  .media {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .media > a {
+    color: white;
+    transition: .5s;
+  }
+
+  .media > a:hover {
+    text-decoration: none;
+    transition: .6s;
+    color: $cadet-blue;
+  }
+
+  .links {
+    margin:0;
+    padding: 0;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+
+  .navigation {
+    margin-left: 1px;
+    margin-top: 10px;
+    font-family: $nunito;
+  }
+
+  .button {
+    height: 50px;
+    background-color: $eucalyptus;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    margin-left: 4px;
+    margin-top: 10px;
+  }
+
+  .button:hover {
+    background-color: $mountain-meadow;
+    transition: background-color .3s;
+  }
+
+  .pagination {
+      display: inline-block;
+      background-color: $eucalyptus;
+      height: 50px;
+      margin-top:10px;
+  }
+
+  .pagination a {
+      color: white;
+      float: left;
+      padding: 12px 16px 7px 16px;
+      text-decoration: none;
+  }
+
+  a.disabled {
+    color: $nandor;
+    pointer-events: none;
+  }
+
+  .pagination a:hover:not(.active) {
+    background-color: $mountain-meadow;
+    transition: background-color .3s;
+    height:50px;
+  }
+
+  .pagination a.active {
+      background-color: $fruit-salad;
+      color: white;
+  }
+
+
+// social END
