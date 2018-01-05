@@ -34,7 +34,7 @@
 
 
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Princess+Sofia');
+    @import url("https://fonts.googleapis.com/css?family=Princess+Sofia");
 
     .back {
     background-image: url("img/paintingback.svg");
@@ -46,7 +46,7 @@
     }
 
     h2 {
-      font-family: 'Princess Sofia', cursive;
+      font-family: "Princess Sofia", cursive;
     }
 
     img {
@@ -103,10 +103,10 @@
 </div>
 <script>
 function hint() {
-      document.getElementById("html").value = '<div class="sign">\n<!-- type One stop shop in a few miles in the correct text tags -->\n<h2></h2>\n</div>\n\n<!-- do not edit below this line! -->\n<!-- setup -->\n<style>\ndiv {\nbackground: url("img/signh2.svg") no-repeat center center;\nbackground-size: cover;\nheight: 188px;\nwidth: 280px;\nposition: absolute;\n top: 40%;\nword-wrap: break-word;\n}\nh2 {\nmargin: 40px;\n color: white; \n}\n</style>';
+      document.getElementById("html").value = '<center>\n<div class="back">\n<div class="canvas">\n <!-- Image below here -->\n<img src="">\n<!-- Image above here -->\n</div>\n</div>\n<h2>Fame and Flower</h2>\n<h4>By Benjamin</h4>\n</center>\n\n\n<style>\n@import url("https://fonts.googleapis.com/css?family=Princess+Sofia");\n\n.back {\nbackground-image: url("img/paintingback.svg");\nheight: 300px;\nwidth:  300px;\nposition: relative;\nmargin: 10%;\nmargin-bottom: 0;\n}\n\nh2 {\nfont-family: "Princess Sofia", cursive;\n}\n\nimg {\nmargin-top: 20px;\nwidth: 250px;\nheight: 250;\nborder-radius: 7px;\n}\n</style>';
     }
     function answer() {
-          document.getElementById("html").value = '<div class="sign">\n<!-- type One stop shop in a few miles in the correct text tags -->\n<h2>One stop shop in a few miles</h2>\n</div>\n\n<!-- do not edit below this line! -->\n<!-- setup -->\n<style>\ndiv {\nbackground: url("img/signh2.svg") no-repeat center center;\nbackground-size: cover;\nheight: 188px;\nwidth: 280px;\nposition: absolute;\n top: 40%;\nword-wrap: break-word;\n}\nh2 {\nmargin: 40px;\n color: white; \n}\n</style>';
+          document.getElementById("html").value = '<center>\n<div class="back">\n<div class="canvas">\n <!-- Image below here -->\n<img src="flower.jpg">\n<!-- Image above here -->\n</div>\n</div>\n<h2>Fame and Flower</h2>\n<h4>By Benjamin</h4>\n</center>\n\n\n<style>\n@import url("https://fonts.googleapis.com/css?family=Princess+Sofia");\n\n.back {\nbackground-image: url("img/paintingback.svg");\nheight: 300px;\nwidth:  300px;\nposition: relative;\nmargin: 10%;\nmargin-bottom: 0;\n}\n\nh2 {\nfont-family: "Princess Sofia", cursive;\n}\n\nimg {\nmargin-top: 20px;\nwidth: 250px;\nheight: 250;\nborder-radius: 7px;\n}\n</style>';
         }
   </script>
 <button type="button" class="button" id="check">Check Answer</button>
@@ -123,15 +123,17 @@ function hint() {
 $(document).ready(function () {
 
     $("iframe").contents().find('body').css('background-color', '#F0D99E').css('background-size', 'cover').css('color', '#1C2833').css('font-family', 'Rubik, sans-serif');
-    $('iframe').contents().find('body').html('<div class="sign animated bounceInDown"></div>')
-    $('iframe').contents().find('div').css('background', 'url("img/signh2.svg") no-repeat center center').css('background-size', 'cover').css('height', '188px').css('width', '280px').css('position', 'absolute').css('top', '40%');
+    $('iframe').contents().find('body').html('<center><div class="back"><div class="canvas"><!-- Image below here --><!-- Image above here --></div></div><h2>Fame and Flower</h2><h4>By Benjamin</h4></center>')
+    $('iframe').contents().find('.back').css('background-image', 'url("img/paintingback.svg")').css('height', '300px').css('width', '300px').css('position', 'relative').css('margin', '10%').css('margin-bottom', '0');
+    $('iframe').contents().find('h2').css('font-family', 'Princess Sofia, cursive');
+    $('iframe').contents().find('img').css('margin-top', '20px').css('width', '250px').css('height', '250px').css('border-radius', '7px');
 
     $("#check").on("click", function () {
     var textAreaCss = $("#css").val();
     var textAreaHtml = $("#html").val();
-    var answer = '<div class="sign">\n<!-- type one stop shop in a few miles in the correct text tags -->\n<h2>one stop shop in a few miles</h2>\n</div>\n\n<!-- do not edit below this line! -->\n<!-- setup -->\n<style>\ndiv {\nbackground: url("img/signh2.svg") no-repeat center center;\nbackground-size: cover;\nheight: 188px;\nwidth: 280px;\nposition: absolute;\n top: 40%;\nword-wrap: break-word;\n}\nh2 {\nmargin: 40px;\n color: white; \n}\n</style>'.replace(/\s*[\r\n]+\s*/g, '\n')
+    var answer = '<center>\n<div class="back">\n<div class="canvas">\n <!-- Image below here -->\n<img src="flower.jpg">\n<!-- Image above here -->\n</div>\n</div>\n<h2>Fame and Flower</h2>\n<h4>By Benjamin</h4>\n</center>\n\n\n<style>\n@import url("https://fonts.googleapis.com/css?family=Princess+Sofia");\n\n.back {\nbackground-image: url("img/paintingback.svg");\nheight: 300px;\nwidth:  300px;\nposition: relative;\nmargin: 10%;\nmargin-bottom: 0;\n}\n\nh2 {\nfont-family: "Princess Sofia", cursive;\n}\n\nimg {\nmargin-top: 20px;\nwidth: 250px;\nheight: 250;\nborder-radius: 7px;\n}\n</style>'.replace(/\s*[\r\n]+\s*/g, '\n')
                                .replace(/(<[^\/][^>]*>)\s*/g, '$1')
-                               .replace(/\s*(<\/[^>]+>)/g, '$1');;
+                               .replace(/\s*(<\/[^>]+>)/g, '$1').toLowerCase();
     // var endStyles = document.getElementById("css").value = 'body {\n background: url("img/cave.jpg") no-repeat center center;\n background-size: cover;\n color: white;\n  height: 100%; \n}';
     var textAreaCssValue = textAreaCss.trim().toLowerCase();
     var textAreaHtmlValue = textAreaHtml.trim().toLowerCase();
@@ -140,10 +142,14 @@ $(document).ready(function () {
                                .replace(/\s*(<\/[^>]+>)/g, '$1');
       if (formatValue.indexOf(answer)!=-1) {
         $("a#next").removeClass("disabled");
-        $('iframe').contents().find('div').removeClass('bounceInDown').addClass('animated bounce infinite');
+        $('iframe').contents().find('.canvas').html('<img src="flower.jpg">');
+        $('iframe').contents().find('img').css('margin-top', '20px').css('width', '250px').css('height', '250px').css('border-radius', '7px');
+        $('iframe').contents().find('div').addClass('animated tada infinite');
+        $('iframe').contents().find('h4, h2').addClass('animated bounce infinite');
       } else {
         console.log(formatValue);
         console.log(answer);
+        console.log("Wrong");
       }
     });
  });
