@@ -39,7 +39,7 @@ p span.pop:hover {
 // body/navbar
 
 body {
-  background-color: $mountain-meadow;
+  background-color: $porcelain;
 
 }
 
@@ -52,6 +52,15 @@ body {
 
 h3 {
   margin-top: 4px;
+}
+
+// jumbotron
+.jumbotron {
+  background-color: $blumine;
+}
+
+.jumbotron > .container {
+    color: white;
 }
 
 // HTML SECTION

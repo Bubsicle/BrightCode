@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </head>
-  <body class="animated fadeInLeft">
+  <body>
     <nav class="animated slideInDown justify-content-center navbar-dark navbar navbar-expand-md ">
       <img class="logo mr-3" src="img/logo.svg">
       <a class="navbar-brand" href="#">CodeBing</a>
