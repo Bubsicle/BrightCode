@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323");
 * {
   box-sizing: border-box; }
 
@@ -15,7 +16,20 @@ p span.pop:hover {
   text-decoration: underline; }
 
 body {
-  background-color: #ECF0F1; }
+  background-color: #16A085; }
+
+.about {
+  color: #ECF0F1; }
+
+.about a {
+  color: #273746; }
+
+.jumbotron {
+  background-color: #0B5345;
+  color: #ECF0F1; }
+
+.fun {
+  font-family: 'Pacifico', cursive; }
 
 .navbar {
   background-color: #234B71;
@@ -25,12 +39,6 @@ body {
 
 h3 {
   margin-top: 4px; }
-
-.jumbotron {
-  background-color: #21618C; }
-
-.jumbotron > .container {
-  color: white; }
 
 .html {
   padding-right: 0; }
@@ -149,6 +157,10 @@ iframe {
   border-radius: 7px;
   margin-left: 4px;
   margin-top: 10px; }
+
+.button > a {
+  color: white;
+  text-decoration: none; }
 
 .button:hover {
   background-color: #16A085;

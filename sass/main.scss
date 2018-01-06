@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323');
+
 // Variables
 $blumine: #21618C;
 $pickled-bluewood: #273746;
@@ -39,9 +41,29 @@ p span.pop:hover {
 // body/navbar
 
 body {
-  background-color: $porcelain;
+  background-color: $mountain-meadow;
 
 }
+
+.about {
+  color: $porcelain;
+}
+
+.about a {
+  color: $pickled-bluewood;
+}
+
+// Jumbo
+
+.jumbotron {
+  background-color: $deep-sea-green;
+  color: $porcelain;
+}
+
+.fun {
+font-family: 'Pacifico', cursive;
+}
+
 
 .navbar {
   background-color: $astronaut;
@@ -52,15 +74,6 @@ body {
 
 h3 {
   margin-top: 4px;
-}
-
-// jumbotron
-.jumbotron {
-  background-color: $blumine;
-}
-
-.jumbotron > .container {
-    color: white;
 }
 
 // HTML SECTION
@@ -226,6 +239,11 @@ iframe {
     border-radius: 7px;
     margin-left: 4px;
     margin-top: 10px;
+  }
+
+  .button > a {
+    color: white;
+    text-decoration: none;
   }
 
   .button:hover {

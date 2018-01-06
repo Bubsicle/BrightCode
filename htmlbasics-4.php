@@ -115,7 +115,7 @@ color: white;
   <a href="htmlbasics-3.php">3</a>
   <a href="htmlbasics-4.php">4</a>
   <a href="htmlbasics-5.php">5</a>
-  <a href="htmlbasics-4.php" class="disabled" id="next">Next</a>
+  <a href="htmlbasics-5.php" class="disabled" id="next">Next</a>
 </div>
 <script>
 function hint() {

@@ -74,16 +74,24 @@
 </div>
     </div>
     <div class="col-md-12 instruc">
-      <center><h3 class="mx-auto mt-4">Using Text</h3></center>
+      <center><h3 class="mx-auto mt-4">Using Images</h3></center>
       <hr>
-      <p>Now you want to get a snack before you go to the airport. But it seems there is no sign showing where a possible shop is.</p>
+      <p>Images are also an important part of web development, as they also convey information and make your site look pretty.</p>
+      <p>Now you'll be using a different tag, an <span class="snippet">&lt;img&gt;</span> tag!</p>
+      <p>These should be much simpler than the previous tags we were learning about because, you don't need to close img tags with a <span class="snippet">/&gt;</span>.</p>
+      <p><span class="snippet">&lt;img&gt;</span> specifies that you want an image in the code, but you need to specifiy what image. To do that, you need to give the <span class="snippet">&lt;img&gt;</span> tag an attribute. An attribute is something that defines a property of a tag and can change how it acts and outputs. We'll be using the <span class="snippet">src=""</span> attribute, src stands for source. We'll be taking an image from a directory, so you can get an image from the internet or from your own storage.</p>
+      <p>To add the <span class="snippet">src=""</span> attribute to the <span class="snippet">&lt;img&gt;</span> tag you type it inbetween the <span class="snippet">&lt;img</span> and the <span class="snippet">&gt;</span>. So it would look like this, <span class="snippet">&lt;img src=""&gt;</span> To specify the image you just type the directory of the image inbewteen the quotation marks,
+        <span class="snippet">" Image_here.png "</span> and you can use most image formats such as .png .jpg etc..</p>
       <center><h3 class="mt-4">Instructions</h3></center>
       <hr>
-      <p>Below is an index of what type of text each type of sign needs.</p>
-      <p>Type One stop shop in a few miles on the sign in the specified sign format from below.</p>
+      <p>Type an <span class="snippet">&lt;img&gt;</span> tag and set it's source attribute to flower.jpg</p>
 
       <center><h3>Index</h3></center>
       <hr>
+      <p><span class="pop" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Most if not everything in your code is surrounded by tags, they come in different form aswell you define the type of tag by typing one of a long list of tag types inbetween the < and the > tags look like this, < > Content here </ > .">Tag</span></p>
+      <p><span class="pop" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="This is a type of tag that displays images to the page and it is self closing which means you do not need /> at the end, you can use images from the internet or from your local storage.">&lt;img&gt;</span></p>
+      <p><span class="pop" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Attributes affect how tags behave and are shown, they are always included inside the tag itself.">Attribute</span></p>
+      <p><span class="pop" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="This is an attribute that gets the source of something like a file, to be displayed.">src=""</span></p>
   </div>
   </div>
   <div class="animated bounceInDown col-sm-12 col-md-6 output">
@@ -99,7 +107,7 @@
   <a href="htmlbasics-3.php">3</a>
   <a href="htmlbasics-4.php">4</a>
   <a href="htmlbasics-5.php">5</a>
-  <a href="htmlbasics-4.php" class="disabled" id="next">Next</a>
+  <a href="tobecontinued.php" class="disabled" id="next">Next</a>
 </div>
 <script>
 function hint() {
