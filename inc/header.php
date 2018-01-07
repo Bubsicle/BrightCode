@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
+    <title>CodeBing || Fun to Code!</title>
     <!-- Required meta tags -->
     <meta http-equiv="pragma" content="no-cache" />
     <meta charset="utf-8">
@@ -29,9 +29,6 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.php">About</a>

@@ -111,7 +111,7 @@ color: white;
     <div class="container-fluid">
   <div class="row navigation">
     <div class="pagination d-flex">
-  <a href="htmlbasics-2.php">Previous</a>
+  <a href="htmlbasics-3.php">Previous</a>
   <a href="htmlbasics-3.php">3</a>
   <a href="htmlbasics-4.php">4</a>
   <a href="htmlbasics-5.php">5</a>
@@ -156,6 +156,8 @@ $(document).ready(function () {
                                .replace(/\s*(<\/[^>]+>)/g, '$1');
       if (formatValue.indexOf(answer)!=-1) {
         $("a#next").removeClass("disabled");
+        $('iframe').contents().find('.sign').html('<h2>One stop shop in a few miles</h2>');
+        $('iframe').contents().find('h2').css('margin', '40px').css('color', 'white');
         $('iframe').contents().find('div').removeClass('bounceInDown').addClass('animated bounce infinite');
       } else {
         console.log(formatValue);

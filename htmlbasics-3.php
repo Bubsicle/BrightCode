@@ -21,7 +21,7 @@
 
   <textarea autocomplete="off" autocorrect="off" autocapitalize="off" class="col" spellcheck="false" class="edit" rows="14"  id="html" placeholder="Type your code here.">
 <div class="sign">
-  <!-- Type City, up ahead in a h1 tag -->
+  <!-- Type City in 5 miles in a h1 tag -->
 
 </div>
 
@@ -118,10 +118,10 @@ margin: 30px;
 </div>
 <script>
 function hint() {
-      document.getElementById("html").value = '<div class="sign">\n  <!-- Type City, up ahead in a h1 tag -->\n  <h1></h1>\n</div>\n\n<!-- Do not edit below this line! -->\n<!-- Setup -->\n<style>  \n  div {\n    background: url("img/signh1.svg") no-repeat center center;\n    background-size: cover;\n    height: 200px;\n    width: 200px;\n    position: absolute;\n    top: 50%;\n    padding: 20px;\n    word-wrap: break-word  \n}\nh1 {\nmargin: 30px;\n}\n</style>';
+      document.getElementById("html").value = '<div class="sign">\n  <!-- Type City in 5 miles in a h1 tag -->\n  <h1></h1>\n</div>\n\n<!-- Do not edit below this line! -->\n<!-- Setup -->\n<style>  \n  div {\n    background: url("img/signh1.svg") no-repeat center center;\n    background-size: cover;\n    height: 200px;\n    width: 200px;\n    position: absolute;\n    top: 50%;\n    padding: 20px;\n    word-wrap: break-word  \n}\nh1 {\nmargin: 30px;\n}\n</style>';
     }
     function answer() {
-          document.getElementById("html").value = '<div class="sign">\n<!-- type city, up ahead in a h1 tag -->\n<h1>city, up ahead</h1>\n</div>\n\n<!-- do not edit below this line! -->\n<!-- setup -->\n<style>\ndiv {\nbackground: url("img/signh1.svg") no-repeat center center;\nbackground-size: cover;\nheight: 188px;\nwidth: 280px;\nposition: absolute;\n top: 40%;\nword-wrap: break-word;\n}\nh1 {\nmargin: 30px;\n}\n</style>';
+          document.getElementById("html").value = '<div class="sign">\n<!-- type city in 5 miles in a h1 tag -->\n<h1>city in 5 miles</h1>\n</div>\n\n<!-- do not edit below this line! -->\n<!-- setup -->\n<style>\ndiv {\nbackground: url("img/signh1.svg") no-repeat center center;\nbackground-size: cover;\nheight: 188px;\nwidth: 280px;\nposition: absolute;\n top: 40%;\nword-wrap: break-word;\n}\nh1 {\nmargin: 30px;\n}\n</style>';
         }
   </script>
 <button type="button" class="button" id="check">Check Answer</button>
@@ -144,7 +144,7 @@ $(document).ready(function () {
     $("#check").on("click", function () {
     var textAreaCss = $("#css").val();
     var textAreaHtml = $("#html").val();
-    var answer = '<div class="sign">\n<!-- type city, up ahead in a h1 tag -->\n<h1>city, up ahead</h1>\n</div>\n\n<!-- do not edit below this line! -->\n<!-- setup -->\n<style>\ndiv {\nbackground: url("img/signh1.svg") no-repeat center center;\nbackground-size: cover;\nheight: 188px;\nwidth: 280px;\nposition: absolute;\n top: 40%;\nword-wrap: break-word;\n}\nh1 {\nmargin: 30px;\n}\n</style>'.replace(/\s*[\r\n]+\s*/g, '\n')
+    var answer = '<div class="sign">\n<!-- type city in 5 miles in a h1 tag -->\n<h1>city in 5 miles</h1>\n</div>\n\n<!-- do not edit below this line! -->\n<!-- setup -->\n<style>\ndiv {\nbackground: url("img/signh1.svg") no-repeat center center;\nbackground-size: cover;\nheight: 188px;\nwidth: 280px;\nposition: absolute;\n top: 40%;\nword-wrap: break-word;\n}\nh1 {\nmargin: 30px;\n}\n</style>'.replace(/\s*[\r\n]+\s*/g, '\n')
                                .replace(/(<[^\/][^>]*>)\s*/g, '$1')
                                .replace(/\s*(<\/[^>]+>)/g, '$1');;
     // var endStyles = document.getElementById("css").value = 'body {\n background: url("img/cave.jpg") no-repeat center center;\n background-size: cover;\n color: white;\n  height: 100%; \n}';
@@ -155,6 +155,8 @@ $(document).ready(function () {
                                .replace(/\s*(<\/[^>]+>)/g, '$1');
       if (formatValue.indexOf(answer)!=-1) {
         $("a#next").removeClass("disabled");
+        $('iframe').contents().find('.sign').html('<h1>City in 5 miles</h1>');
+        $('iframe').contents().find('h1').css('margin', '30px');
         $('iframe').contents().find('div').addClass('animated bounce infinite');
       } else {
         console.log(formatValue);

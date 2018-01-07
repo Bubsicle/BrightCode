@@ -103,7 +103,7 @@
     <div class="container-fluid">
   <div class="row navigation">
     <div class="pagination d-flex">
-  <a href="htmlbasics-2.php">Previous</a>
+  <a href="htmlbasics-4.php">Previous</a>
   <a href="htmlbasics-3.php">3</a>
   <a href="htmlbasics-4.php">4</a>
   <a href="htmlbasics-5.php">5</a>

@@ -13,6 +13,7 @@
     <div class="card-body">
       <h5 class="card-title">HTML Basics</h5>
       <p class="card-text">HTML, the construction of all websites, learn HTML with fun and engaging levels of this HTML basics course.</p>
+      <p class="card-text"><small>Work in progress...</small></p>
       <button class="button start"><a href="htmlbasics-1.php">Start!</a></button>
     </div>
   </div>
