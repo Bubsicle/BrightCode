@@ -65,7 +65,7 @@ margin: 30px;
       <center><h3 class="mt-4">Instructions</h3></center>
       <hr>
       <p>Below is an index of what type of text each type of sign needs.</p>
-      <p>You need to write City, up ahead in the specified sign format.</p>
+      <p>You need to write City in 5 miles in the specified sign format.</p>
 
       <center><h3>Index</h3></center>
       <hr>
