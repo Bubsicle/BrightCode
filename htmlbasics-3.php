@@ -10,9 +10,9 @@
   <li class="nav-item switch ">
     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#htmlEditor" role="tab" aria-controls="pills-home" aria-selected="true">HTML</a>
   </li>
-  <li class="nav-item switch">
+  <!-- <li class="nav-item switch">
     <a class="nav-link css" id="pills-profile-tab" data-toggle="pill" href="#cssEditor" role="tab" aria-controls="pills-profile" aria-selected="false">CSS</a>
-  </li>
+  </li> -->
 </ul>
 
 <div class="tab-content" id="pills-tabContent">
@@ -48,12 +48,12 @@ margin: 30px;
 </div>
 
   <!-- CSS -->
-  <div class="tab-pane fade" id="cssEditor" role="tabpanel" aria-labelledby="pills-profile-tab">
+  <!-- <div class="tab-pane fade" id="cssEditor" role="tabpanel" aria-labelledby="pills-profile-tab">
     <textarea autocomplete="off" autocorrect="off" autocapitalize="off" class="col" spellcheck="false" class="edit" rows="14"  id="css" placeholder="Type your code here.">
 
 
     </textarea>
-</div>
+</div> -->
 </div>
 
 </div>
@@ -124,9 +124,11 @@ function hint() {
           document.getElementById("html").value = '<div class="sign">\n<!-- type city in 5 miles in a h1 tag -->\n<h1>city in 5 miles</h1>\n</div>\n\n<!-- do not edit below this line! -->\n<!-- setup -->\n<style>\ndiv {\nbackground: url("img/signh1.png") no-repeat center center;\nbackground-size: cover;\nheight: 188px;\nwidth: 280px;\nposition: absolute;\n top: 40%;\nword-wrap: break-word;\n}\nh1 {\nmargin: 30px;\n}\n</style>';
         }
   </script>
+<div>
 <button type="button" class="button" id="check">Check Answer</button>
 <button type="button" id="hint" class="button" onclick="hint()">Show Hint</button>
 <button type="button" id="answer" class="button" onclick="answer()">Show Answer</button>
+</div>
 </div>
 </div>
 <?php include("inc/credentials.php"); ?>
@@ -148,7 +150,7 @@ $(document).ready(function () {
                                .replace(/(<[^\/][^>]*>)\s*/g, '$1')
                                .replace(/\s*(<\/[^>]+>)/g, '$1');;
     // var endStyles = document.getElementById("css").value = 'body {\n background: url("img/cave.jpg") no-repeat center center;\n background-size: cover;\n color: white;\n  height: 100%; \n}';
-    var textAreaCssValue = textAreaCss.trim().toLowerCase();
+    // var textAreaCssValue = textAreaCss.trim().toLowerCase();
     var textAreaHtmlValue = textAreaHtml.trim().toLowerCase();
     var formatValue = textAreaHtmlValue.replace(/\s*[\r\n]+\s*/g, '\n')
                                .replace(/(<[^\/][^>]*>)\s*/g, '$1')

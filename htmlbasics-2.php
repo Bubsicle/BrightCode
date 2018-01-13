@@ -10,9 +10,9 @@
   <li class="nav-item switch ">
     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#htmlEditor" role="tab" aria-controls="pills-home" aria-selected="true">HTML</a>
   </li>
-  <li class="nav-item switch">
+  <!-- <li class="nav-item switch">
     <a class="nav-link css" id="pills-profile-tab" data-toggle="pill" href="#cssEditor" role="tab" aria-controls="pills-profile" aria-selected="false">CSS</a>
-  </li>
+  </li> -->
 </ul>
 
 <div class="tab-content" id="pills-tabContent">
@@ -28,7 +28,7 @@
 </div>
 
   <!-- CSS -->
-  <div class="tab-pane fade" id="cssEditor" role="tabpanel" aria-labelledby="pills-profile-tab">
+  <!-- <div class="tab-pane fade" id="cssEditor" role="tabpanel" aria-labelledby="pills-profile-tab">
 
     <textarea rows="1" class="col area-top" id="input" readonly="readonly">
 
@@ -37,7 +37,7 @@
     <textarea class="col area-bottom" rows="5" id="input" readonly="readonly">
 
     </textarea>
-</div>
+</div> -->
 </div>
 
 </div>
@@ -92,7 +92,13 @@
           &lt;p&gt;&lt;/p&gt;
         </p>
       </div>
-      <p>Then type Hello inside all the tags, make sure the tags are on their own line.</p>
+      <p>Then type <b>Help</b> in the h1 tag.</p>
+      <p>Then type <b>I am</b> in the h2 tag.</p>
+      <p>Then type <b>stuck in a</b> in the h3 tag.</p>
+      <p>Then type <b>cave</b> in the h4 tag.</p>
+      <p>Then type <b>It is</b> in the h5 tag.</p>
+      <p>Then type <b>dark</b> in the h6 tag.</p>
+      <p>Then type <b>in here</b> in the p tag.</p>
 
       <center><h3>Index</h3>
       <p>Hover over the text to see an explanation of what you hovered over</p></center>
@@ -126,15 +132,17 @@
 </div>
 <script>
 function hint() {
-      document.getElementById("html").value = "<h1>Hello</h1>\n<h2>Hello</h2>\n<h3></h3>\n<h4></h4>\n<h5></h5>\n<h6></h6>\n<p></p>";
+      document.getElementById("html").value = "<h1>Help</h1>\n<h2>I am</h2>\n<h3></h3>\n<h4></h4>\n<h5></h5>\n<h6></h6>\n<p></p>";
     }
     function answer() {
-          document.getElementById("html").value = "<h1>Hello</h1>\n<h2>Hello</h2>\n<h3>Hello</h3>\n<h4>Hello</h4>\n<h5>Hello</h5>\n<h6>Hello</h6>\n<p>Hello</p>";
+          document.getElementById("html").value = "<h1>Help</h1>\n<h2>I am</h2>\n<h3>stuck in a</h3>\n<h4>cave</h4>\n<h5>it is</h5>\n<h6>dark</h6>\n<p>in here</p>";
         }
   </script>
+<div>
 <button type="button" class="button" id="check">Check Answer</button>
 <button type="button" id="hint" class="button" onclick="hint()">Show Hint</button>
 <button type="button" id="answer" class="button" onclick="answer()">Show Answer</button>
+</div>
 </div>
 </div>
 <?php include("inc/credentials.php"); ?>
@@ -145,22 +153,24 @@ function hint() {
 <script>
 $(document).ready(function () {
     $("#check").on("click", function () {
-    var textAreaCss = $("#css").val();
+    // var textAreaCss = $("#css").val();
     var textAreaHtml = $("#html").val();
-    var answer = "<h1>hello</h1>\n<h2>hello</h2>\n<h3>hello</h3>\n<h4>hello</h4>\n<h5>hello</h5>\n<h6>hello</h6>\n<p>hello</p>";
-    var endStyles = document.getElementById("css").value = 'body {\n background: url("img/cave.jpg") no-repeat center center;\n background-size: cover;\n color: white;\n  height: 100%; \n}';
-    var textAreaCssValue = textAreaCss.trim().toLowerCase();
+    var answer = "<h1>help</h1>\n<h2>i am</h2>\n<h3>stuck in a</h3>\n<h4>cave</h4>\n<h5>it is</h5>\n<h6>dark</h6>\n<p>in here</p>".replace(/\s*[\r\n]+\s*/g, '\n')
+                               .replace(/(<[^\/][^>]*>)\s*/g, '$1')
+                               .replace(/\s*(<\/[^>]+>)/g, '$1');;
+    // var textAreaCssValue = textAreaCss.trim().toLowerCase();
     var textAreaHtmlValue = textAreaHtml.trim().toLowerCase();
     var formatValue = textAreaHtmlValue.replace(/\s*[\r\n]+\s*/g, '\n')
                                .replace(/(<[^\/][^>]*>)\s*/g, '$1')
                                .replace(/\s*(<\/[^>]+>)/g, '$1');
       if (formatValue.indexOf(answer)!=-1) {
         $("a#next").removeClass("disabled");
-        $('iframe').contents().find('body').html(textAreaHtml + '<div class="animated fadeInUp"><h1>Echo...</h1> <h2>Echo...</h2><h3>Echo...</h3><h4>Echo...</h4><h5>Echo...</h5><h6>Echo...</h6><p>Echo...</p></div> <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@sortino?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Joshua Sortino"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Joshua Sortino</span></a>');
-        endStyles;
+        $('iframe').contents().find('body').html(textAreaHtml + '<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@sortino?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Joshua Sortino"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Joshua Sortino</span></a>');
         $("iframe").contents().find('body').css('background', 'url("img/cave.jpg") no-repeat center center').css('background-size', 'cover').css('height', '100%').css('color', 'white');
       } else {
-
+console.log("wrong");
+console.log(answer);
+console.log(formatValue);
       }
     });
  });

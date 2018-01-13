@@ -15,6 +15,18 @@ p span.pop:hover {
   border-radius: 7px;
   text-decoration: underline; }
 
+button.start {
+  position: absolute;
+  right: 6px;
+  bottom: 6px; }
+
+a.start {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em;
+  margin: -2em; }
+
 body {
   background-color: #16A085; }
 

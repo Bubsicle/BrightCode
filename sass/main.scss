@@ -40,6 +40,22 @@ p span.pop:hover {
 
 // body/navbar
 
+button.start {
+  position: absolute;
+  right:    6px;
+  bottom:   6px;
+}
+
+a.start {
+display: inline-block;
+position: relative;
+z-index: 1;
+padding: 2em;
+margin: -2em;
+}
+
+
+
 body {
   background-color: $mountain-meadow;
 

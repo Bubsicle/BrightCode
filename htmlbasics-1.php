@@ -10,9 +10,9 @@
   <li class="nav-item switch ">
     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#htmlEditor" role="tab" aria-controls="pills-home" aria-selected="true">HTML</a>
   </li>
-  <li class="nav-item switch">
+  <!-- <li class="nav-item switch">
     <a class="nav-link css" id="pills-profile-tab" data-toggle="pill" href="#cssEditor" role="tab" aria-controls="pills-profile" aria-selected="false">CSS</a>
-  </li>
+  </li> -->
 </ul>
 
 <div class="tab-content" id="pills-tabContent">
@@ -30,7 +30,7 @@
 </div>
 
   <!-- CSS -->
-  <div class="tab-pane fade" id="cssEditor" role="tabpanel" aria-labelledby="pills-profile-tab">
+  <!-- <div class="tab-pane fade" id="cssEditor" role="tabpanel" aria-labelledby="pills-profile-tab">
 
     <textarea rows="1" class="col area-top" id="input" readonly="readonly">
 
@@ -39,7 +39,7 @@
     <textarea class="col area-bottom" rows="5" id="input" readonly="readonly">
 
     </textarea>
-</div>
+</div> -->
 </div>
 
 </div>
@@ -56,7 +56,10 @@
             <p class="mt-3">In the code editor above, there will be comments to guide you and make it easier to understand what you need to do. Comments do not change anything about the code, they are like notes in your text book, they help you with understanding a subject. Throughout these games you will see them in the code, they will hopefully guide you on where to put your code and they will try to make the experience easier for you.</p>
             <center><h3>Instructions</h3></center>
             <hr>
-            <p class="instruction-text">To write a comment, all you have to do is type the beggining and end part with content inbetween them. <br><span class="snippet">&lt;!-- CONTENT HERE --&gt;</span></p>
+            <p class="instruction-text">To write a comment, all you have to do is type the beginning and end part with content inbetween them. <br><span class="snippet">&lt;!-- CONTENT HERE --&gt;</span></p>
+            <center><h3>Index</h3></center>
+            <hr>
+            <p><span class="pop" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="A comment is an annotation for your code, they could be used to show where you want someone to type their code or they could be used to explain a part of theri code. Comments do not affect output they are simply there to read in the code editor.">Comment</span></p>
     </div>
   </div>
   <div class="col-sm-12 col-md-6 output">
@@ -82,9 +85,11 @@
 //           document.getElementById("html").value = "<h1>Hello</h1>\n<h2>Hello</h2>\n<h3>Hello</h3>\n<h4>Hello</h4>\n<h5>Hello</h5>\n<h6>Hello</h6>\n<p>Hello</p>";
 //         }
   </script>
+  <div>
 <button type="button" class="button" id="check">Check Answer</button>
 <button type="button" id="hint" class="button" onclick="hint()">Show Hint</button>
 <button type="button" id="answer" class="button" onclick="answer()">Show Answer</button>
+</div>
 </div>
 </div>
 <?php include("inc/credentials.php"); ?>

@@ -14,7 +14,7 @@
       <h5 class="card-title">HTML Basics</h5>
       <p class="card-text">HTML, the construction of all websites, learn HTML with fun and engaging levels of this HTML basics course.</p>
       <p class="card-text"><small>Work in progress...</small></p>
-      <button class="button start"><a href="htmlbasics-1.php">Start!</a></button>
+      <button class="button start"><a class="start" href="htmlbasics-1.php">Start!</a></button>
     </div>
   </div>
   <div class="card">
@@ -22,7 +22,7 @@
     <div class="card-body">
       <h5 class="card-title">CSS Basics</h5>
       <p class="card-text">Coming Soon, making your sites look proffesional with fun and interesting games.</p>
-      <button class="button start"><a class="disabled" href="htmlbasics-1.php">Coming Soon!</a></button>
+      <button class="button start"><a class="start disabled" href="htmlbasics-1.php">Coming Soon!</a></button>
     </div>
   </div>
   <div class="card">
@@ -30,7 +30,7 @@
     <div class="card-body">
       <h5 class="card-title">JavaScript Basics</h5>
       <p class="card-text">Coming Soon, condtitionals, loops, arrays! Learn how to make your website easier to code and fun with JavaScript</p>
-      <button class="button start"><a class="disabled" href="htmlbasics-1.php">Coming Soon!</a></button>
+      <button class="button start"><a class="start disabled" href="htmlbasics-1.php">Coming Soon!</a></button>
     </div>
   </div>
 </div>

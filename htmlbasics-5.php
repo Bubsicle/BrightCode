@@ -10,9 +10,9 @@
   <li class="nav-item switch ">
     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#htmlEditor" role="tab" aria-controls="pills-home" aria-selected="true">HTML</a>
   </li>
-  <li class="nav-item switch">
+  <!-- <li class="nav-item switch">
     <a class="nav-link css" id="pills-profile-tab" data-toggle="pill" href="#cssEditor" role="tab" aria-controls="pills-profile" aria-selected="false">CSS</a>
-  </li>
+  </li> -->
 </ul>
 
 <div class="tab-content" id="pills-tabContent">
@@ -63,12 +63,12 @@
 </div>
 
   <!-- CSS -->
-  <div class="tab-pane fade" id="cssEditor" role="tabpanel" aria-labelledby="pills-profile-tab">
+  <!-- <div class="tab-pane fade" id="cssEditor" role="tabpanel" aria-labelledby="pills-profile-tab">
     <textarea autocomplete="off" autocorrect="off" autocapitalize="off" class="col" spellcheck="false" class="edit" rows="14"  id="css" placeholder="Type your code here.">
 
 
     </textarea>
-</div>
+</div> -->
 </div>
 
 </div>
@@ -117,9 +117,11 @@ function hint() {
           document.getElementById("html").value = '<center>\n<div class="back">\n<div class="canvas">\n <!-- Image below here -->\n<img src="flower.jpg">\n<!-- Image above here -->\n</div>\n</div>\n<h2>Fame and Flower</h2>\n<h4>By Benjamin</h4>\n</center>\n\n\n<style>\n@import url("https://fonts.googleapis.com/css?family=Princess+Sofia");\n\n.back {\nbackground-image: url("img/paintingback.svg");\nheight: 300px;\nwidth:  300px;\nposition: relative;\nmargin: 10%;\nmargin-bottom: 0;\n}\n\nh2 {\nfont-family: "Princess Sofia", cursive;\n}\n\nimg {\nmargin-top: 20px;\nwidth: 250px;\nheight: 250;\nborder-radius: 7px;\n}\n</style>';
         }
   </script>
+<div>
 <button type="button" class="button" id="check">Check Answer</button>
 <button type="button" id="hint" class="button" onclick="hint()">Show Hint</button>
 <button type="button" id="answer" class="button" onclick="answer()">Show Answer</button>
+</div>
 </div>
 </div>
 <?php include("inc/credentials.php"); ?>
@@ -143,7 +145,7 @@ $(document).ready(function () {
                                .replace(/(<[^\/][^>]*>)\s*/g, '$1')
                                .replace(/\s*(<\/[^>]+>)/g, '$1').toLowerCase();
     // var endStyles = document.getElementById("css").value = 'body {\n background: url("img/cave.jpg") no-repeat center center;\n background-size: cover;\n color: white;\n  height: 100%; \n}';
-    var textAreaCssValue = textAreaCss.trim().toLowerCase();
+    // var textAreaCssValue = textAreaCss.trim().toLowerCase();
     var textAreaHtmlValue = textAreaHtml.trim().toLowerCase();
     var formatValue = textAreaHtmlValue.replace(/\s*[\r\n]+\s*/g, '\n')
                                .replace(/(<[^\/][^>]*>)\s*/g, '$1')
