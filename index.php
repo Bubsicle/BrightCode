@@ -21,7 +21,7 @@
     <img class="card-img-top" src="img/css.png" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">CSS Basics</h5>
-      <p class="card-text">Coming Soon, making your sites look proffesional with fun and interesting games.</p>
+      <p class="card-text">Coming Soon, making your sites look profesional with fun and interesting games.</p>
       <button class="button start"><a class="start disabled" href="htmlbasics-1.php">Coming Soon!</a></button>
     </div>
   </div>

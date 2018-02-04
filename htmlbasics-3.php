@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 <div class="row mt-3">
-  <div class="html col-sm-12 col-md-6">
+  <div class="animated bounceInDown html col-sm-12 col-md-6">
     <div class="code mr-3">
       <center><h3 class="tool-title">Code Editor</h3></center>
       <div class="editor">
@@ -101,7 +101,7 @@ margin: 30px;
 </div>
   </div>
   </div>
-  <div class="col-sm-12 col-md-6 output">
+  <div class="animated bounceInDown col-sm-12 col-md-6 output">
   <center><h3 class="tool-title">Code Output</h3></center>
     <iframe>
 
