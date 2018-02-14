@@ -87,8 +87,8 @@ textarea {
 
 textarea#html:focus, textarea#css:focus {
   transition: .5s;
-  background-color: #16A085;
-  color: white;
+  background-color: #AEB6BF;
+  color: #353D45;
   outline-width: 0; }
 
 .area-top, .area-bottom {

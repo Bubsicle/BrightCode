@@ -29,7 +29,7 @@
 <!-- Setup -->
 <style>
 div {
-  background: url("img/signh2.svg") no-repeat center center;
+  background: url("img/signh2.png") no-repeat center center;
   background-size: cover;
   height: 188px;
   width: 280px;
